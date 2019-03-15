@@ -2,6 +2,46 @@
 
 `IDEA` + `Maven`
 
+## Spring
+
+- 什么是Spring
+
+  - Spring是一个非常活跃的开源框架
+  - 由Rod Jhonson开发
+  - 帮助分离项目组间之间的依赖关系
+  - 主要目的是简化企业开发
+
+- 核心概念
+
+  | 概念 | 全称                        | 解释                                                         |
+  | ---- | --------------------------- | ------------------------------------------------------------ |
+  | IoC  | Inversion of Control        | 控制翻转（对象创建和对象之间关系的控制权由程序员管理变为Spring管理） |
+  | DI   | Dependency Injection        | 依赖注入（对象和对象之间的依赖关系的创建）                   |
+  | AOP  | Aspect Oriented Programming | 面向切面编程（通过预编译方式和运行期动态代理实现程序功能的统一维护） |
+
+- 组成
+  - Test(单元测试)
+  - Core Container(核心容器)
+    - Beans(对象创建)
+    - Core(控制翻转与依赖注入)
+    - Context(上下文，spring容易)
+    - SpEL(Spring表达式语言(Spring Expression Language,*SpEL*))
+  - AOP(面向切面)
+  - Aspects(面向切面)
+  - Instrumentation(检测器jvm&tomcat检测)
+  - Messaging（消息模块）
+  - Data Access/Integraton(数据访问与集成)
+    - JDBC(Java DataBase Connectivity,java数据库连接)
+    - ORM(数据集成框架)
+    - OXM(对象和xml转换的支持)
+    - JMS(生产者与消费者的消息功能)
+    - Transaction(事务管理)
+  - WEB
+    - WebSocket(websocket开发)
+    - Serviet(Spring MVC)
+    - Web(Spring Web ,WEB应用程序)
+    - Porlet(内容继承、聚合)
+
 ## 初始项目
 
 1. 创建maven项目
