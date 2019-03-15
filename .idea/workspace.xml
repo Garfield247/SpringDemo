@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23b46a45-1636-4618-b591-8d794b91b45d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/First_Spring_Boot.md" beforeDir="false" afterPath="$PROJECT_DIR$/First_Spring_Boot.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/ApplicationSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/ApplicationSpring.java" afterDir="false" />
-    </list>
+    <list default="true" id="23b46a45-1636-4618-b591-8d794b91b45d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -150,7 +146,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552634734868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552636003792" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
