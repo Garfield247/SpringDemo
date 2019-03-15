@@ -13,14 +13,9 @@ public class ApplicationSpring {
         ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationSpring.class);
         // 获取MessagePrint对象
         MessagePrinter printer = context.getBean(MessagePrinter.class);
-        // 获取MessageService对象
-        MessageService service = context.getBean(MessageService.class);
 
         System.out.println(printer);
-        System.out.println(service);
 
-        // 设置打印机对象的service属性
-        printer.setService(service);
         // 打印消息
         printer.printMessage();
     }

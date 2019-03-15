@@ -1,5 +1,6 @@
 package hello;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -27,7 +28,9 @@ public class MessagePrinter {
      * 快捷键：Alt+Inster --> Seater
      * @param service
      */
+    @Autowired
     public void setService(MessageService service) {
+
         this.service = service;
     }
 

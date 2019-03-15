@@ -246,3 +246,84 @@ public class ApplicationSpring {
 
 ```
 
+## 管理对象之间的关联关系
+
+`Class "MessagePrinter"`
+
+为`getService`方法添加`Autowired`注解
+
+<!--Autowired ，它可以对类成员变量、方法及构造函数进行标注，完成自动装配的工作。 通过 @Autowired的使用来消除 set ，get方法。-->
+
+```java
+package hello;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+/**
+ * 消息打印机
+ */
+@Component
+public class MessagePrinter {
+    /**
+     * 无参构造方法
+     * 用于打印输出
+     */
+    public MessagePrinter() {
+        super();
+        System.out.println("MessagePrinter");
+    }
+
+    /**
+     * 建立message和service的关联方式
+     */
+
+    private MessageService service;
+
+    /**
+     * 设置message的值
+     * 快捷键：Alt+Inster --> Seater
+     * @param service
+     */
+    @Autowired
+    public void setService(MessageService service) {
+
+        this.service = service;
+    }
+
+    public void printMessage(){
+        System.out.println(this.service.getMessage());
+    }
+}
+
+```
+
+`Class "ApplicationSpring"`
+
+在MessagePrinter中添加Autowired注解后就不需要再在处设置printer的service属性
+
+```java
+package hello;
+
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+
+@ComponentScan
+public class ApplicationSpring {
+    public static void main(String[] args) {
+        System.out.println("ApplicationSpring");
+        // 初始化Spring容器
+        ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationSpring.class);
+        // 获取MessagePrint对象
+        MessagePrinter printer = context.getBean(MessagePrinter.class);
+
+        System.out.println(printer);
+
+        // 打印消息
+        printer.printMessage();
+    }
+}
+```
+
